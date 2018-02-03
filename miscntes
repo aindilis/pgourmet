@@ -1,0 +1,23 @@
+  # basic considerations in optimizing food layout
+
+  # first  is that  the best  layout will  be the  one that  lets them
+  # survive  - if  they use  up all  their resources,  they  will have
+  # trouble
+
+  # now if  they are  feeling low on  energy -  alter the diet  by all
+  # means.  also,  of course, make  sure they are exercising.   have a
+  # program that counters their arguments pro laziness
+
+  # if they have just eaten  something, unless they really like it, it
+  # will  be less  appealing?   come up  with  mathematical models  of
+  # appeal.  have  them rate the  meals before and after.   Don't just
+  # use numbers
+
+  if ($args{Options}) {
+    # factor in score (nutrition value, etc)
+
+    # if we are missing information  for one or more items, although
+    # we can't rule foods into the nutritious, we can rule them out.
+    # Also, try  to find  a more general  match, to help  with that.
+    # So,  you  know, the  remaining  ingredient  is chicken,  well,
+    # that's not so bad...  that's roughly like this:

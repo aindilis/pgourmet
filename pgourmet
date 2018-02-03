@@ -1,0 +1,18 @@
+#!/usr/bin/perl -w
+
+use PGourmet;
+use UniLang::Agent::Agent;
+use UniLang::Util::Message;
+
+$UNIVERSAL::agent = UniLang::Agent::Agent->new(Name => "PGourmet",
+					       ReceiveHandler => \&Receive);
+$UNIVERSAL::pgourmet = PGourmet->new
+	();
+
+sub Receive {
+  my %args = @_;
+  $UNIVERSAL::pgourmet->ProcessMessage
+    (Message => $args{Message});
+}
+
+$UNIVERSAL::pgourmet->Load;
